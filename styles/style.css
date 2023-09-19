@@ -13,6 +13,7 @@ body {
   font-family: "Migra", serif;
   font-weight: 100;
 }
+
 .sidebar {
   border-right: 1px solid #707070;
   height: 100vh;
@@ -53,23 +54,28 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .main p {
   width: 500px;
 }
+
 .title h1 {
   padding-top: 10px;
   margin-bottom: 20px;
   font-size: 50px;
 }
+
 .title h2 {
   font-family: "Antonio", sans-serif;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: 300;
 }
+
 .pics img {
   width: 500px;
 }
+
 .pics h2 {
   font-size: 28px;
   font-size: 1.75rem;
