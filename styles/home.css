@@ -3,23 +3,6 @@
   font-family: "Migra";
 } */
 
-.loading-page-title {
-  font-family: "Antonio", sans-serif;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.title-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.page-content {
-  display: none;
-}
-
 .container {
   padding: 0 60px 0 60px;
 }

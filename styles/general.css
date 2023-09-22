@@ -16,7 +16,22 @@ body {
   font-weight: 100;
   background-size: contain;
 }
+.loading-page-title {
+  font-family: "Antonio", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.page-content {
+  display: none;
+}
 .sidebar {
   border-right: 1px solid #707070;
   height: 100vh;
@@ -27,6 +42,7 @@ body {
 }
 .sidebar-wrapper label {
   font-size: 40px;
+  cursor: pointer;
 }
 .sidebar-wrapper {
   width: 60px;
@@ -81,13 +97,17 @@ body {
 }
 
 .sidebar-items {
+  display: flex;
+  justify-content: space-between;
   width: calc(100% - 61px);
   height: 100vh;
   position: fixed;
   z-index: 1000;
   background-color: #282828;
   top: 0;
-  left: 71px;
+  right: -100%;
+  /* left: 71px; */
+  background-image: url(https://sites-stories.com/static/media/bg_grain_gray.8c21eae3.svg);
   /* visibility: hidden; */
   /* opacity: 0; */
 }
@@ -100,12 +120,11 @@ body {
   font-size: 65px;
   height: 100%;
   align-items: center;
-
-  background-image: url(https://sites-stories.com/static/media/bg_grain_gray.8c21eae3.svg);
 }
 
 .sidebar-cities li {
   list-style: none;
+  width: 100%;
 }
 .sidebar-cities li:hover {
   color: red;
@@ -132,8 +151,28 @@ body {
 }
 
 .left {
-  /* left: 71px; */
-  visibility: visible;
+  left: 71px;
+  /* visibility: visible;
   opacity: 1;
-  right: 0;
+  right: 0; */
+}
+
+.sidebar-left {
+  font-family: "Antonio", sans-serif;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.sidebar-left li {
+  list-style: none;
+  font-size: 25px;
+}
+.sidebar-left li:hover {
+  color: red;
+}
+
+.language-selector {
+  padding-top: 30px;
 }

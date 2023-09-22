@@ -19,9 +19,10 @@ window.addEventListener("load", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburger-menu");
   const sidebarItems = document.getElementById("sidebar-items");
+  console.log(hamburgerMenu);
 
   hamburgerMenu.onclick = function () {
-    sidebarItems.classList.toggle("right");
+    sidebarItems.classList.toggle("left");
     sidebarItems.classList.toggle("darker-sidebar");
   };
 });
