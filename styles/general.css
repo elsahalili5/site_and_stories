@@ -8,12 +8,13 @@
 }
 body {
   background: #282828;
+  background-image: url(https://sites-stories.com/static/media/bg_grain.156a9453.svg);
   font-family: "Raleway", sans-serif;
-  background-image: ;
   background-attachment: fixed;
   height: 100%;
   color: white;
   font-weight: 100;
+  background-size: contain;
 }
 
 .sidebar {
@@ -77,4 +78,62 @@ body {
 
 .circle:hover::after {
   opacity: 1;
+}
+
+.sidebar-items {
+  width: calc(100% - 61px);
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  background-color: #282828;
+  top: 0;
+  left: 71px;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+
+.sidebar-cities {
+  padding-left: 21%;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  font-family: "Lora", serif;
+  font-size: 65px;
+  height: 100%;
+  align-items: center;
+
+  background-image: url(https://sites-stories.com/static/media/bg_grain_gray.8c21eae3.svg);
+}
+
+.sidebar-cities li {
+  list-style: none;
+}
+.sidebar-cities li:hover {
+  color: red;
+}
+/* .sidebar-cities li span::before {
+  content: "⬤";
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  color: red;
+  margin-top: -5px;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0.2, 1) 0s;
+} */
+.sidebar-cities li span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 400;
+  top: 50%;
+  left: 30px;
+}
+.darker-sidebar {
+  background-image: url(https://sites-stories.com/static/media/bg_grain_gray.8c21eae3.svg);
+}
+
+.left {
+  /* left: 71px; */
+  visibility: visible;
+  opacity: 1;
+  right: 0;
 }

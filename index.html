@@ -20,14 +20,11 @@
     rel="stylesheet"
   />
   <body>
-    <div id="title-wrapper" class="title-wrapper">
-      <h1 class="loading-page-title">DARK HERITAGE IN KOSOVO</h1>
-    </div>
     <div id="page-content" class="page-content">
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
         <div class="sidebar-wrapper">
           <div class="hamburger">
-            <label class="icon" for="menu-icon" onclick="openMenu()"
+            <label id="hamburger-menu" class="icon" for="menu-icon"
               >&#9776;</label
             >
           </div>
@@ -38,6 +35,33 @@
             <a href="">
               <span class="circle">●</span>
             </a>
+          </div>
+
+          <div class="sidebar-items" id="sidebarItems">
+            <ul class="sidebar-cities">
+              <li><span>01</span> FERIZAJ</li>
+              <li><span>02</span> GJAKOVE</li>
+              <li><span>02</span> GJILAN</li>
+              <li><span>03</span> MITROVICA</li>
+              <li><span>04</span> PEJA</li>
+              <li><span>05</span> PRISTINA</li>
+              <li><span>06</span> PRIZREN</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-left">
+            <ul>
+              <li>OVERVIEW</li>
+              <li>SITES</li>
+              <li>THE PROJECT</li>
+              <li>
+                <ul class="language-selector">
+                  <li>SHQIP</li>
+                  <li>ENGLISH</li>
+                  <li>SPRSKI</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -57,23 +81,10 @@
               about the dark heritage of Kosovo.
             </p>
           </div>
-          <!-- <div class="pics">
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
-              alt=""
-            />
-            <h2 class="city"><span>● </span>PODUJEVA</h2>
-          </div>
-          <div class="pics">
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
-              alt=""
-            />
-            <h2 class="city"><span>● </span>PODUJEVA</h2>
-          </div> -->
+
           <div class="slideshow-container">
             <div class="slide fade">
-              <a href="">
+              <a href="podujeva-case.html">
                 <img
                   src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
                   alt="Slide 1"
@@ -108,5 +119,6 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>

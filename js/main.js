@@ -1,38 +1,27 @@
-// function openMenu() {
-//   var menu = document.getElementById("myLinks");
-//   if (menu.style.display === "block") {
-//     menu.style.display = "none";
-//   } else {
-//     menu.style.display = "block";
-//   }
-// }
 window.addEventListener("load", function () {
-  var title = document.getElementById("title-wrapper");
-  var pageContent = document.getElementById("page-content");
+  document.body.innerHTML += `
+    <div id="title-wrapper" class="title-wrapper">
+      <h1 class="loading-page-title">DARK HERITAGE IN KOSOVO</h1>
+    </div>
+  `;
 
   setTimeout(function () {
-    if (title) {
-      title.style.display = "none";
-    }
-    if (pageContent) {
-      pageContent.style.display = "block";
+    const pageContentWrapper = document.getElementById("page-content");
+    const titleWrapper = document.getElementById("title-wrapper");
+
+    titleWrapper.remove();
+
+    if (pageContentWrapper) {
+      pageContentWrapper.style.display = "block";
     }
   }, 1500);
 });
-var slideIndex = 0;
-showSlides();
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const sidebarItems = document.getElementById("sidebar-items");
 
-function showSlides() {
-  var slides = document.getElementsByClassName("slide");
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change slides automatically every 2 seconds (adjust as needed)
-}
+  hamburgerMenu.onclick = function () {
+    sidebarItems.classList.toggle("right");
+    sidebarItems.classList.toggle("darker-sidebar");
+  };
+});
