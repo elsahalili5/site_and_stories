@@ -44,8 +44,11 @@
   line-height: 1.6em;
   font-family: "Raleway", sans-serif;
 }
+
 .arrow-icon {
+  color: white;
   font-size: 30px;
   width: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
