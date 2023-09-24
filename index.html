@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sites Stories</title>
-    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="icon" type="image/x-icon" href="icon.jpg" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +34,12 @@
       <div class="sidebar" id="sidebar">
         <div class="sidebar-wrapper">
           <div class="hamburger" id="hamburger-menu">
-            <label class="icon" for="menu-icon">&#9776;</label>
+            <label class="icon" id="h-icon" for="menu-icon">&#9776;</label>
+            <ion-icon
+              class="remove-icon"
+              id="remove-icon"
+              name="close"
+            ></ion-icon>
           </div>
           <div class="sidebar-title">
             <h2>SITES-STORIES</h2>
@@ -50,9 +63,9 @@
 
             <div class="sidebar-left">
               <ul>
-                <li>OVERVIEW</li>
-                <li>SITES</li>
-                <li>THE PROJECT</li>
+                <li><a href="index.html">OVERVIEW</a></li>
+                <li><a href="sites.html">SITES</a></li>
+                <li><a href="about.html">THE PROJECT</a></li>
               </ul>
 
               <ul class="language-selector">
@@ -92,7 +105,7 @@
               </a>
             </div>
             <div class="slide fade">
-              <a href="">
+              <a href="nakarade-case.html">
                 <img
                   src="https://management.sites-stories.com/wp-content/uploads/2021/05/familja-mirena.png"
                   alt="Slide 2"

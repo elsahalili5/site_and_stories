@@ -168,7 +168,19 @@ body {
 .sidebar-left li:hover {
   color: red;
 }
-
+.sidebar-left ul li a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar-left ul li a:hover {
+  color: red;
+}
 .language-selector {
   padding-top: 30px;
+}
+.remove-icon {
+  display: none;
+  font-weight: 500;
+  font-size: 40px;
+  cursor: pointer;
 }
