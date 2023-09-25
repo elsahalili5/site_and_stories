@@ -119,3 +119,33 @@
     opacity: 1;
   }
 }
+
+.cases-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.cases-wrapper img {
+  width: 350px;
+  height: 250px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.case-description {
+  text-align: center;
+}
+.case-description p {
+  font-family: "Lora", serif;
+}
+.case-description h5 {
+  padding-bottom: 20px;
+  color: red;
+}
+
+.cases-wrapper {
+  display: none;
+}
+
+.show-cases {
+  display: flex;
+}

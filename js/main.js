@@ -44,14 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.getElementById("sidebar");
   const hamburgerIcon = document.getElementById("h-icon");
   const removeIcon = document.getElementById("remove-icon");
+
   if (hamburgerMenu) {
-    console.log(hamburgerMenu);
-    console.log(removeIcon);
     hamburgerMenu.addEventListener("click", () => {
+      hamburgerIcon.style.display = "none";
       sidebarItems.classList.add("sidebar-items-show");
       sidebar.classList.add("darker-sidebar");
-      hamburgerIcon.style.display = "none";
       removeIcon.style.display = "block";
     });
   }
+
+  removeIcon.addEventListener("click", () => {
+    sidebar.classList.remove("darker-sidebar");
+    sidebarItems.style.display = "none";
+    hamburgerIcon.style.display = "block";
+
+    removeIcon.style.display = "none";
+    removeIcon.style.backgroundColor = "red !important";
+  });
 });

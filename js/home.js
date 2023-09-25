@@ -13,5 +13,15 @@ function showSlides() {
   }
 
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change slides automatically every 2 seconds (adjust as needed)
+  setTimeout(showSlides, 6000);
 }
+const cities = document.querySelectorAll(".city");
+
+cities.forEach((city, index) => {
+  city.addEventListener("click", () => {
+    const casesWrappers = document.querySelectorAll(".cases-wrapper");
+    const casesWrapper = casesWrappers[index];
+
+    casesWrapper.classList.toggle("show-cases");
+  });
+});
