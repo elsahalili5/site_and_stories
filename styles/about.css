@@ -1,0 +1,40 @@
+.container3 {
+  background-image: url(https://sites-stories.com/static/media/bg_grain_gray.8c21eae3.svg);
+}
+
+.red-span {
+  color: red;
+}
+.about-description {
+  font-size: 65px;
+}
+
+.container3 {
+  padding: 100px 200px;
+}
+.description-wrapper {
+  width: 500px;
+}
+.description-wrapper p {
+  margin-bottom: 20px;
+}
+.description-wrapper2 {
+  width: 250px;
+}
+.project-description {
+  line-height: 1.6em;
+  display: flex;
+  padding-top: 30px;
+}
+.description-wrapper2 {
+  margin-left: 15%;
+}
+.description-wrapper2 h2 {
+  font-family: "Antonio", sans-serif;
+  color: red;
+  padding-bottom: 20px;
+}
+
+.content {
+  padding: 20px 0;
+}

@@ -10,11 +10,8 @@ body {
   background: #282828;
   background-image: url(https://sites-stories.com/static/media/bg_grain.156a9453.svg);
   font-family: "Raleway", sans-serif;
-  background-attachment: fixed;
-  height: 100%;
   color: white;
   font-weight: 100;
-  background-size: contain;
 }
 .loading-page-title {
   font-family: "Antonio", sans-serif;
@@ -66,8 +63,6 @@ body {
   transform: rotate(180deg);
 }
 
-.sidebar-bottom {
-}
 .sidebar-bottom a {
   text-decoration: none;
   color: red;
@@ -168,7 +163,42 @@ body {
 .sidebar-left li:hover {
   color: red;
 }
-
+.sidebar-left ul li a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar-left ul li a:hover {
+  color: red;
+}
 .language-selector {
   padding-top: 30px;
+}
+.remove-icon {
+  display: none;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+  .container3 {
+    padding: 70px 20px;
+  }
+  .about-description {
+    font-size: 38px;
+  }
+  .description-wrapper {
+    width: auto;
+  }
+  .project-description {
+    display: block;
+  }
+  .description-wrapper2 {
+    margin-left: 0;
+  }
+  .description-wrapper2 {
+    width: auto;
+  }
 }

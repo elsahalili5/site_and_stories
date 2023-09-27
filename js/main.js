@@ -36,3 +36,30 @@ window.addEventListener("load", function () {
     }
   }, 1500);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOMContentLoaded");
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const sidebarItems = document.getElementById("sidebar-items");
+  const sidebar = document.getElementById("sidebar");
+  const hamburgerIcon = document.getElementById("h-icon");
+  const removeIcon = document.getElementById("remove-icon");
+
+  if (hamburgerMenu) {
+    hamburgerMenu.addEventListener("click", () => {
+      hamburgerIcon.style.display = "none";
+      sidebarItems.classList.add("sidebar-items-show");
+      sidebar.classList.add("darker-sidebar");
+      removeIcon.style.display = "block";
+    });
+  }
+
+  removeIcon.addEventListener("click", () => {
+    sidebar.classList.remove("darker-sidebar");
+    sidebarItems.style.display = "none";
+    hamburgerIcon.style.display = "block";
+
+    removeIcon.style.display = "none";
+    removeIcon.style.backgroundColor = "red !important";
+  });
+});

@@ -13,22 +13,28 @@ function showSlides() {
   }
 
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change slides automatically every 2 seconds (adjust as needed)
+  setTimeout(showSlides, 6000);
 }
+const cities = document.querySelectorAll(".city");
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOMContentLoaded");
-  const hamburgerMenu = document.getElementById("hamburger-menu");
-  const sidebarItems = document.getElementById("sidebar-items");
-  const sidebar = document.getElementById("sidebar");
+cities.forEach((city, index) => {
+  city.addEventListener("click", () => {
+    const casesWrappers = document.querySelectorAll(".cases-wrapper");
+    const casesWrapper = casesWrappers[index];
+    const prevCase = document.querySelector(".show-cases");
+    const clickedCase = document.querySelector(".cases-wrapper.show-cases");
 
-  if (hamburgerMenu) {
-    console.log(hamburgerMenu);
-    console.log(sidebarItems);
-    console.log(sidebar);
-    hamburgerMenu.addEventListener("click", () => {
-      sidebarItems.classList.add("sidebar-items-show");
-      sidebar.classList.add("darker-sidebar");
-    });
-  }
+    if (prevCase) {
+      prevCase.classList.remove("show-cases");
+    }
+
+    // casesWrappers.forEach((element) => {
+    //   element.classList.remove("show-cases");
+    // });
+    casesWrapper.classList.toggle("show-cases");
+
+    if (clickedCase) {
+      clickedCase.classList.remove("show-cases");
+    }
+  });
 });

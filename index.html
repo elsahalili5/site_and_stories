@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sites Stories</title>
-    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="icon" type="image/x-icon" href="icon.jpg" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +34,12 @@
       <div class="sidebar" id="sidebar">
         <div class="sidebar-wrapper">
           <div class="hamburger" id="hamburger-menu">
-            <label class="icon" for="menu-icon">&#9776;</label>
+            <label class="icon" id="h-icon" for="menu-icon">&#9776;</label>
+            <ion-icon
+              class="remove-icon"
+              id="remove-icon"
+              name="close"
+            ></ion-icon>
           </div>
           <div class="sidebar-title">
             <h2>SITES-STORIES</h2>
@@ -39,7 +52,9 @@
 
           <div class="sidebar-items" id="sidebar-items">
             <ul class="sidebar-cities">
-              <li><span>01</span> FERIZAJ</li>
+              <li>
+                <a href="#"><span>01</span> FERIZAJ</a>
+              </li>
               <li><span>02</span> GJAKOVE</li>
               <li><span>02</span> GJILAN</li>
               <li><span>03</span> MITROVICA</li>
@@ -50,9 +65,9 @@
 
             <div class="sidebar-left">
               <ul>
-                <li>OVERVIEW</li>
-                <li>SITES</li>
-                <li>THE PROJECT</li>
+                <li><a href="index.html">OVERVIEW</a></li>
+                <li><a href="sites.html">SITES</a></li>
+                <li><a href="about.html">THE PROJECT</a></li>
               </ul>
 
               <ul class="language-selector">
@@ -92,7 +107,7 @@
               </a>
             </div>
             <div class="slide fade">
-              <a href="">
+              <a href="nakarade-case.html">
                 <img
                   src="https://management.sites-stories.com/wp-content/uploads/2021/05/familja-mirena.png"
                   alt="Slide 2"
@@ -109,12 +124,144 @@
         </p>
       </div>
 
-      <div class="row">FERIZAJ</div>
-      <div class="row">GJAKOVA</div>
-      <div class="row">MITROVICA</div>
-      <div class="row">PEJA</div>
-      <div class="row">PRISTINA</div>
-      <div class="row">PRIZREN</div>
+      <div class="row">
+        <div class="city">FERIZAJ</div>
+        <section id="ferizaj" class="cases-wrapper">
+          <div class="case-description">
+            <p>KOTLINE</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/3_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>KACANIK</p>
+          </div>
+          <div class="case-description">
+            <p>RECAK</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/06/2_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>SHTIME</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="city">GJAKOVA</div>
+        <section class="cases-wrapper">
+          <div class="case-description">
+            <p>CELINA</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/5_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>RAHOVEC</p>
+          </div>
+          <div class="case-description">
+            <p>BELEG</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/8_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>DECAN</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="city">MITROVICA</div>
+        <section class="cases-wrapper">
+          <div class="case-description">
+            <p>IZBICE</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/06/7_edit-1.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>SKENDERAJ</p>
+          </div>
+          <div class="case-description">
+            <p>MARINE</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/13_edit.jpg "
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>SKENDERAJ</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="city">PEJA</div>
+        <section class="cases-wrapper">
+          <div class="case-description">
+            <p>VOLLJAK</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/14_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>PEJA</p>
+          </div>
+          <div class="case-description">
+            <p>NABERGJAN</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/24_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>PEJA</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="city">PRISTINA</div>
+        <section class="cases-wrapper">
+          <div class="case-description">
+            <p>PODUJEVE</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>PODUJEVA</p>
+          </div>
+          <div class="case-description">
+            <p>QIREZ &amp; LIKOSHAN</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/4_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>DRENAS</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="city">PRIZREN</div>
+        <section class="cases-wrapper">
+          <div class="case-description">
+            <p>SUHAREKE</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/6_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>SUHAREKE</p>
+          </div>
+          <div class="case-description">
+            <p>BURIM</p>
+            <img
+              src="https://management.sites-stories.com/wp-content/uploads/2021/04/18_edit.jpg"
+              alt=""
+            />
+            <h5>MUNICIPALITY</h5>
+            <p>MALISHEVA</p>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="./js/main.js"></script>
