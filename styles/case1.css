@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
-.container2 {
-  display: flex;
-  justify-content: space-between;
-}
 .case-video {
   width: calc(50% - 40px);
   height: 100vh;
@@ -55,4 +51,23 @@
 
 .nakarade-story {
   height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+
+  .story-wrapper {
+    padding: 0;
+  }
+  .case-description {
+    width: auto;
+    padding: 20px;
+  }
+  .case-video {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
 }
