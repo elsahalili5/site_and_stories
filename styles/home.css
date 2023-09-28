@@ -2,6 +2,7 @@
   src: url("Migra-Extralight.otf");
   font-family: "Migra";
 } */
+@import url(https://fonts.bunny.net/css?family=amita:700);
 
 .container {
   padding: 0 60px 0 60px;
@@ -22,9 +23,8 @@
   padding-top: 10px;
   margin-bottom: 20px;
   font-size: 60px;
-  font-family: "Migra";
+  font-family: Amita;
 
-  /* font-family: "Bitter", serif; */
   font-weight: 100;
 }
 
@@ -38,7 +38,9 @@
 .slideshow-container img {
   width: 500px;
 }
-
+.slideshow-container img:hover {
+  background-color: #707070;
+}
 .warning-message {
   font-size: 15px;
   font-style: italic;
@@ -158,9 +160,9 @@
     width: 100%;
     height: 350px;
   }
-  .sidebar {
+  /* .sidebar-wrapper {
     display: none;
-  }
+  } */
   .warning-message {
     text-align: left;
   }

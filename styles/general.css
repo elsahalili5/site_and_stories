@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +38,7 @@ body {
   z-index: 999;
   transition: all 0.3s cubic-bezier(0.3, 0, 0.2, 1);
   font-weight: 100;
+  background-image: url(https://sites-stories.com/static/media/bg_grain.156a9453.svg);
 }
 .sidebar-wrapper label {
   font-size: 40px;
@@ -180,9 +183,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .sidebar {
-    display: none;
-  }
   .container3 {
     padding: 70px 20px;
   }
@@ -200,5 +200,62 @@ body {
   }
   .description-wrapper2 {
     width: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #707070;
+  }
+  .sidebar-wrapper {
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .sidebar-items {
+    margin-top: 61px;
+    width: 100%;
+    overflow: scroll;
+    display: block;
+    padding: 20px;
+  }
+
+  .sidebar-title {
+    writing-mode: initial;
+    transform: none;
+  }
+  .sidebar-items-show {
+    left: 0;
+  }
+
+  .sidebar-cities {
+    padding: 20px 0;
+    padding-bottom: 30px;
+    font-size: 25px;
+
+    height: auto;
+  }
+  .sidebar-cities li {
+    margin-bottom: 10px;
+  }
+  .sidebar-left li {
+    font-size: 22px;
+  }
+  .sidebar-bottom {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar-cities {
+    font-size: 20px;
+  }
+  .sidebar-title {
+    font-size: 15px;
   }
 }
