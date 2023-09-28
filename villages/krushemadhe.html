@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>RAJONI:</span> GJAKOVË</p>
+            <p><span>KOMUNA:</span>RAHOVEC </p>
+            <p><span>VENDNDODHJA:</span>KRUSHË E MADHE </p>
+            <p><span>DATA:</span>25-27 MARS 1999</p>
+            <p>Krimet makabre të Serbisë ndaj popullatës civile shqiptare në Kosovë nuk kanë kursyer asnjë lokacion, fshat apo qytet të Kosovës. Serbia kishte angazhuar tërë makinerinë e saj policore dhe ushtarake kundër popullatës civile shqiptare dhe për t’u mos u mjaftuar nga kjo, Serbia kishte angazhuar edhe serbët lokal në Kosovë si njesi të veçanta për t’iu ndihmuar formacioneve policore dhe ushtarake. Një aksion i tillë i ndërmarrë nga policia, ushtria dhe njesitë e angazhuara shtesë të Serbisë ishte zbatuar në Krushë të madhe të Rahovecit, ku gjatë tri diteve radhazi nga data 25 deri me datë 27 mars të vitit 1999 nga këto forca janë ekzekutuar apo gjymtuar me shumë se 240 civilë shqiptar dhe ashkali nga ky fshat, ndërsa mbi 1 mijë shtepi janë djegur apo shkaterruar në tërsi nga makineria e Serbisë.
+
+                Serbia me qellim të fshehjes se krimit, disa javë pas krimit, ka zhvarrosur një numer të madh të viktimave duke i humbur pa zhurm, edhe tani (mars 2021) mbi 60 persona nga ky fshat rezultojnë të zhdukur.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/19_edit.jpg" alt="GJAKOVË-Krushë e Madhe">
+
+     
+    </div>
+</body>
+</html>

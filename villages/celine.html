@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>RAJONI:</span>GJAKOVË </p>
+            <p><span>KOMUNA:</span> RAHOVEC</p>
+            <p><span>VENDNDODHJA:</span> CELINË</p>
+            <p><span>DATA:</span>26 MARS 1999</p>
+            <p>Me datë 26 mars 1999 forcat e kombinuara policore dhe ushtarake të Serbisë rrethojnë fshatin Celinë në Komunën e Rahovecit dhe fillojnë të hyjnë nëpër shtëpitë shqiptare duke i nxjerrur jashtë dhjetëra banorë të këtij lokaliteti, 76 nga ta i pushkatojnë, disa prej tyre i gjymtojnë për se gjalli, në mesin e tyre 10 fëmijë, njëri vetëm 18 muajsh. Terrori mbi popullaten civile ka zgjatur për dy ditë të tëra dhe viktimat për disa ditë kanë mbetur të pa varrosur në oborret, podrume, shtepitë dhe në hapësira të tjera.
+
+                Njëri nga pjestarët e policisë së Serbisë është paraqitur para gjykatës ndërkombetare në Hagë për ish jugosllavinë si dëshmitarë i mbrojtur (K-41) i cili mes tjerash ka dëshmuar që kishin urdhër të prerë që të ushtrohet masakër mbi popullaten civile shqiptare si shenjë hakmarrje ndaj fillimi të bombardimeve të NATO-së mbi ish Jugosllavinë.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/5_edit.jpg" >
+     
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>RAJONI:</span>GJAKOVË </p>
+            <p><span>KOMUNA:</span> DEÇAN</p>
+            <p><span>VENDNDODHJA:</span> BELEG</p>
+            <p><span>DATA:</span>29-30 MARS 1999</p>
+            <p>Serbia në të gjitha vendbanimet e Kosovës ka ndjekur pothuajese të njejten taktik për të prodhuar frikësim dhe debim të shqiptarëve. Si në rajonin e dukagjinit, atë të Llapit, Gollakut, Karadakut, Drenicës, Shalës, haset formë e njejtë e qasjes nga Serbia ndaj popullatës civile. Ajo që ka ndodhur në fshatin Beleg të Deçanit, është e ngjajshme me atë që ka ndodhur në fshatin Celinë, Qirez, Likoshan, Reçak, Mejë, Krushë, e dhjetëra vendbanime tjera nëpër Kosovë.
+
+                Me datë 29 dhe 30 mars 1999 policia dhe njesitë e angazhuara nga Serbia rrethojnë fshatin Beleg dhe Irzniq të Deçanit, fillimisht e granatojnë atë nga distanca dhe të nesermen hyjnë në fshatë për të shkuar të secila shtëpi dhe duke i nxjerrur jashtë shtëpive gjithë banorët, grat dhe fëmijet i urdhërojnë të shkojnë për në Shqipëri, ndërsa djemët dhe burrat fillimisht u marrin dokumentacionin, i rrahim me shufra hekuri dhe me pas i ekzekutojnë 41 prej tyre, një pjesë e madhe e trupave të vrarë nga Serbia janë marr prej tyre duke duke rezultuar kështu të zhdukur.</p>        
+</div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/8_edit.jpg" >
+     
+    </div>
+</body>
+</html>
