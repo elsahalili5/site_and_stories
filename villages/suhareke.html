@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>RAJONI:</span>PRIZREN </p>
+            <p><span>KOMUNA:</span>SUHAREKË </p>
+            <p><span>VENDNDODHJA:</span>SUHAREKË </p>
+            <p><span>DATA:</span> 26 MARS 1999</p>
+            <p>Forcat policore të Serbisë pa asnjë pretekst me datë 26 mars të vitit 1999 i versulen familjes Berisha në Suharekë, me t’u afruar shtepisë ata fillojnë të shtijnë me automatik dhe disa anëtar të familjes Berisha plagosen. Policia e Serbisë hynë në shtepi dhe i terheq zvarrë të plagosurit, ndersa anëtaret e tjerë të familjes Berisha i urdheron të futen në një lokal (piceri) aty afër. Me të siguruar nga policia që kanë hyrë të gjithë anëtarët e familjes Berisha në hapësiren e urdhëruar, fillojnë të hedhin bomba brenda në lokal. Aty mbesin të vrarë 49 anëtar të familjes Berisha, përfshirë 23 fëmijë dhe një grua shtatzënë.
+
+                Pas këtij akti, policia e Serbisë i ngarkon në një kamion viktimat, disa nga personat që kanë treguar shenja jete i kanë qelluar me automatik në kokë. Kamioni niset në drejtim të Prizrenit. Gramos Berisha vetëm 8 vjeçar në atë kohe dhe nëna e tij Vjollca dhe kanata Shyhretja janë shtirë si të vdekur dhe gjatë transportimit të viktimave nga Suhareka për në Prizren ata kanë arritur të kërcejnë nga kamioni dhe kësisoj kanë shpetuar.
+                
+                23 antarë të familjes Berisha janë gjetur në një kamion në liqenin e Batajnicës në Beograd, disa anëtar të familjes Berisha akoma rezultojnë të zhdukur.
+                
+                Një pjesë rrefimi nga Gramozi: “Ka pasur fëmijë shumë të vegjël, nëntë muajsh, që kanë bërtitur gjatë gjithë kohës, që kanë qarë, kanë kërkuar ujë, por policia e Serbisë nuk janë ndalur duke gjuajtur, deri në momentin që janë ndalur të gjithë zërat dhe nuk ka pasur më britma, në lokal”, ka rrefyer Gramozi. I rrethuar nga trupat e vdekur, Gramozi pa se nëna e tij, Vjollca, dhe gruaja e një familjari, Shyhretja, ende ishin gjallë.
+                
+                “Gjatë rrugës e kam dëgjuar një bisedë, mami me Shyhreten duke folur, duke komunikuar mes vete, por unë prapë nuk kam guxuar ta ngre kokën duke menduar që e kemi dikë në kamion edhe mund të merret vesh. Kam qëndruar ashtu, pa lëvizur hiç. Gjatë rrugës, mami ma ka njohur jaknen që kam qenë i mbuluar dhe ka thënë t’ia shoh bile për herë të fundit fytyrën e djalit. Kur më ka kthyer kah vetja, unë i kam çelë sytë. Ka thënë: “Mozi, a je gjallë?”. I kam thënë po. Ka thënë hajde me mamin kërcejmë prej kamionit se këta na shtinë në ndonjë gropë dhe s’mund të dalim pastaj”, kujton Gramozi.
+                
+                “Afër meje e kam pasur një djalë në gjeneratë me mua, Miratin, ai ka qenë gjallë edhe në kamion. Jemi munduar ta marrim bashkë me mamin, i thamë: “Eja me ne të kërcejmë”. Ai filloi të bërtasë dhe tha: “Jo nuk po dua, vetëm largoma këtë trupin”. Atij ia kishin qitë një trup përmbi, s’mund të merrte frymë. “Veç largoma këtë se s’po dua. Po dua të shkoj me mamin”, ka rrëfyer Gramozi.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/05/6_edit_new.jpg" >
+     
+    </div>
+</body>
+</html>
