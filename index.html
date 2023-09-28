@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -50,10 +54,13 @@
             </a>
           </div>
 
-          <div class="sidebar-items" id="sidebar-items">
+          <div
+            class="sidebar-items animated__animated animate__fadeInLeft"
+            id="sidebar-items"
+          >
             <ul class="sidebar-cities">
               <li>
-                <a href="#"><span>01</span> FERIZAJ</a>
+                <a href="#ferizaj"><span>01</span> FERIZAJ</a>
               </li>
               <li><span>02</span> GJAKOVE</li>
               <li><span>02</span> GJILAN</li>
@@ -66,7 +73,7 @@
             <div class="sidebar-left">
               <ul>
                 <li><a href="index.html">OVERVIEW</a></li>
-                <li><a href="sites.html">SITES</a></li>
+                <li><a href="city.html">SITES</a></li>
                 <li><a href="about.html">THE PROJECT</a></li>
               </ul>
 
@@ -83,11 +90,11 @@
       <div class="container">
         <div class="main">
           <div class="description">
-            <div class="title">
+            <div class="title animate__animated animate__fadeInDown">
               <h1>SITES AND STORIES</h1>
               <h2>DARK HERITAGE IN KOSOVO</h2>
             </div>
-            <p>
+            <p class="animate__animated animate__bounceInLeft">
               This project is an effort to collect and preserve the memories and
               places of war crimes in Kosovo. This online platform aims to
               establish a ‘digital memory’ which presents in a dignified manner
@@ -96,7 +103,9 @@
             </p>
           </div>
 
-          <div class="slideshow-container">
+          <div
+            class="slideshow-container animate__animated animate__backInRight"
+          >
             <div class="slide fade">
               <a href="podujeva-case.html">
                 <img
@@ -126,15 +135,20 @@
 
       <div class="row">
         <div class="city">FERIZAJ</div>
-        <section id="ferizaj" class="cases-wrapper">
+        <section
+          id="ferizaj"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
-            <p>KOTLINE</p>
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/04/3_edit.jpg"
-              alt=""
-            />
-            <h5>MUNICIPALITY</h5>
-            <p>KACANIK</p>
+            <a href="/villages/kotline.html">
+              <p>KOTLINE</p>
+              <img
+                src="https://management.sites-stories.com/wp-content/uploads/2021/04/3_edit.jpg"
+                alt=""
+              />
+              <h5>MUNICIPALITY</h5>
+              <p>KACANIK</p>
+            </a>
           </div>
           <div class="case-description">
             <p>RECAK</p>
@@ -149,7 +163,7 @@
       </div>
       <div class="row">
         <div class="city">GJAKOVA</div>
-        <section class="cases-wrapper">
+        <section class="cases-wrapper animate__animated animate__fadeInUp">
           <div class="case-description">
             <p>CELINA</p>
             <img
@@ -172,7 +186,7 @@
       </div>
       <div class="row">
         <div class="city">MITROVICA</div>
-        <section class="cases-wrapper">
+        <section class="cases-wrapper animate__animated animate__fadeInUp">
           <div class="case-description">
             <p>IZBICE</p>
             <img
@@ -195,7 +209,7 @@
       </div>
       <div class="row">
         <div class="city">PEJA</div>
-        <section class="cases-wrapper">
+        <section class="cases-wrapper animate__animated animate__fadeInUp">
           <div class="case-description">
             <p>VOLLJAK</p>
             <img
@@ -218,7 +232,7 @@
       </div>
       <div class="row">
         <div class="city">PRISTINA</div>
-        <section class="cases-wrapper">
+        <section class="cases-wrapper animate__animated animate__fadeInUp">
           <div class="case-description">
             <p>PODUJEVE</p>
             <img
@@ -228,7 +242,7 @@
             <h5>MUNICIPALITY</h5>
             <p>PODUJEVA</p>
           </div>
-          <div class="case-description">
+          <div class="case-description animate__animated animate__fadeInUp">
             <p>QIREZ &amp; LIKOSHAN</p>
             <img
               src="https://management.sites-stories.com/wp-content/uploads/2021/04/4_edit.jpg"
@@ -241,7 +255,7 @@
       </div>
       <div class="row">
         <div class="city">PRIZREN</div>
-        <section class="cases-wrapper">
+        <section class="cases-wrapper animate__animated animate__fadeInUp">
           <div class="case-description">
             <p>SUHAREKE</p>
             <img

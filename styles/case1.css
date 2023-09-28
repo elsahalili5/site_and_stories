@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url(https://fonts.bunny.net/css?family=amita:700);
 
 .case-video {
   width: calc(50% - 40px);
@@ -31,6 +32,8 @@
 }
 
 .case-description h1 {
+  font-family: Amita;
+
   margin-bottom: 20px;
   font-size: 50px;
 }
@@ -54,9 +57,9 @@
 }
 
 @media (max-width: 1000px) {
-  .sidebar {
+  /* .sidebar {
     display: none;
-  }
+  } */
 
   .story-wrapper {
     padding: 0;
@@ -70,4 +73,18 @@
     width: auto;
     height: auto;
   }
+  .case-video img {
+    width: 100%;
+  }
+  /* .case-description span {
+    font-size: 10px;
+  }
+  .case-description p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .case-description h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  } */
 }
