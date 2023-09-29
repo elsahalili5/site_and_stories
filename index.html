@@ -1,3 +1,5 @@
+<!-- ELSA -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +11,10 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap"
       rel="stylesheet"
@@ -34,11 +40,13 @@
   </head>
 
   <body>
+    <!-- fillimi i sidebar -->
     <div id="page-content" class="page-content">
       <div class="sidebar" id="sidebar">
         <div class="sidebar-wrapper">
           <div class="hamburger" id="hamburger-menu">
             <label class="icon" id="h-icon" for="menu-icon">&#9776;</label>
+
             <ion-icon
               class="remove-icon"
               id="remove-icon"
@@ -50,7 +58,7 @@
           </div>
           <div class="sidebar-bottom">
             <a href="city.html">
-              <span class="circle">●</span>
+              <span class="circle animate__animated animate__zoomIn">●</span>
             </a>
           </div>
 
@@ -62,12 +70,22 @@
               <li>
                 <a href="#ferizaj"><span>01</span> FERIZAJ</a>
               </li>
-              <li><span>02</span> GJAKOVE</li>
-              <li><span>02</span> GJILAN</li>
-              <li><span>03</span> MITROVICA</li>
-              <li><span>04</span> PEJA</li>
-              <li><span>05</span> PRISTINA</li>
-              <li><span>06</span> PRIZREN</li>
+              <li>
+                <a href="#gjakove"><span>02</span> GJAKOVE</a>
+              </li>
+              <li></li>
+              <li>
+                <a href="#mitrovica"><span>03</span> MITROVICA</a>
+              </li>
+              <li>
+                <a href="#peja"><span>04</span> PEJA</a>
+              </li>
+              <li>
+                <a href="#prishtina"><span>05</span> PRISHTINA</a>
+              </li>
+              <li>
+                <a href="#prizren"><span>06</span> PRIZREN</a>
+              </li>
             </ul>
 
             <div class="sidebar-left">
@@ -86,7 +104,7 @@
           </div>
         </div>
       </div>
-
+      <!-- mbarimi i sidebar -->
       <div class="container">
         <div class="main">
           <div class="description">
@@ -140,45 +158,60 @@
           class="cases-wrapper animate__animated animate__fadeInUp"
         >
           <div class="case-description">
-            <a href="/villages/kotline.html">
+            <a href="./villages/kotline.html">
               <p>KOTLINE</p>
+
               <img
                 src="https://management.sites-stories.com/wp-content/uploads/2021/04/3_edit.jpg"
                 alt=""
               />
-              <h5>MUNICIPALITY</h5>
-              <p>KACANIK</p>
             </a>
+
+            <h5>MUNICIPALITY</h5>
+            <p>KACANIK</p>
           </div>
           <div class="case-description">
-            <p>RECAK</p>
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/06/2_edit.jpg"
-              alt=""
-            />
+            <a href="./villages/recak.html">
+              <p>RECAK</p>
+
+              <img
+                src="https://management.sites-stories.com/wp-content/uploads/2021/06/2_edit.jpg"
+                alt=""
+              />
+            </a>
+
             <h5>MUNICIPALITY</h5>
+
             <p>SHTIME</p>
           </div>
         </section>
       </div>
       <div class="row">
         <div class="city">GJAKOVA</div>
-        <section class="cases-wrapper animate__animated animate__fadeInUp">
+        <section
+          id="gjakove"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
-            <p>CELINA</p>
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/04/5_edit.jpg"
-              alt=""
-            />
+            <a href="./villages/celine.html">
+              <p>CELINA</p>
+              <img
+                src="https://management.sites-stories.com/wp-content/uploads/2021/04/5_edit.jpg"
+                alt=""
+              />
+            </a>
+
             <h5>MUNICIPALITY</h5>
             <p>RAHOVEC</p>
           </div>
           <div class="case-description">
-            <p>BELEG</p>
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/04/8_edit.jpg"
-              alt=""
-            />
+            <a href="./villages/beleg.html">
+              <p>BELEG</p>
+              <img
+                src="https://management.sites-stories.com/wp-content/uploads/2021/04/8_edit.jpg"
+                alt=""
+              />
+            </a>
             <h5>MUNICIPALITY</h5>
             <p>DECAN</p>
           </div>
@@ -186,7 +219,10 @@
       </div>
       <div class="row">
         <div class="city">MITROVICA</div>
-        <section class="cases-wrapper animate__animated animate__fadeInUp">
+        <section
+          id="mitrovica"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
             <p>IZBICE</p>
             <img
@@ -209,7 +245,10 @@
       </div>
       <div class="row">
         <div class="city">PEJA</div>
-        <section class="cases-wrapper animate__animated animate__fadeInUp">
+        <section
+          id="peja"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
             <p>VOLLJAK</p>
             <img
@@ -231,14 +270,19 @@
         </section>
       </div>
       <div class="row">
-        <div class="city">PRISTINA</div>
-        <section class="cases-wrapper animate__animated animate__fadeInUp">
+        <div class="city">PRISHTINA</div>
+        <section
+          id="prishtina"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
-            <p>PODUJEVE</p>
-            <img
-              src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
-              alt=""
-            />
+            <a href="podujeva-case.html ">
+              <p>PODUJEVE</p>
+              <img
+                src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png"
+                alt=""
+              />
+            </a>
             <h5>MUNICIPALITY</h5>
             <p>PODUJEVA</p>
           </div>
@@ -255,7 +299,10 @@
       </div>
       <div class="row">
         <div class="city">PRIZREN</div>
-        <section class="cases-wrapper animate__animated animate__fadeInUp">
+        <section
+          id="prizren"
+          class="cases-wrapper animate__animated animate__fadeInUp"
+        >
           <div class="case-description">
             <p>SUHAREKE</p>
             <img

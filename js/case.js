@@ -1,3 +1,5 @@
+// Elsa
+
 document.addEventListener("DOMContentLoaded", function () {
   const arrowBtn = document.getElementById("arrow-icon");
 
@@ -5,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "index.html";
   };
 });
+//kur klikojme ne shigjete me e ndrru window.location.href ne menyre qe na kthy ne pjesen e home(balline)

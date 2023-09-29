@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text and Photo with Animation</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site-Stories</title>
+
     <style>
-    body {
-            background: #282828;
-            font-family: "Antonio", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+        background: #282828;
+        font-family: "Antonio", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-        .text-container {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
+      .text-container {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
 
-        .text {
-            font-size: 18px;
-            color: #fff;
-        }
+      .text {
+        font-size: 18px;
+        color: #fff;
+      }
 
+      .text p {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
 
-        .text p {
-            font-size: 16px;
-            color: #fff;
-            font-family: "Courier New", Courier, monospace;
+      .text span {
+        font-size: 20px;
+        color: red; /* Red */
+        font-weight: bold;
+        font-family: "Georgia", sans-serif;
+      }
 
+      .photo-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
 
-        }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
 
-        .text span {
-            font-size: 20px;
-            color: red; /* Red */
-            font-weight: bold;
-            font-family: "Georgia", sans-serif;
-
-        }
-
-        .photo-container {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-
-        .photo:hover {
-            transform: scale(1.1);
-        }
-          /* Styles for the back arrow */
-          .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
+      .photo:hover {
+        transform: scale(1.1);
+      }
+      /* Styles for the back arrow */
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a class="back-arrow" href="">&#8592;</a>
     <div class="text-container">
-        <div class="text">
-            <p><span>RAJONI:</span> GJAKOVË</p>
-            <p><span>KOMUNA:</span> GJAKOVË</p>
-            <p><span>VENDNDODHJA:</span>SHTËPIA E MEHDI VEJSËS
-            </p>
-            <p><span>DATA:</span>1-2 PRILL 1999</p>
-            <p>Masakra e tmerrshme që ndodhi në hapësirat e shtëpisë së Mehdi Vejsës (ku ishin anëtarët e katër familjeve), natën ndërmjet 1 e 2 prillit 1999, në Gjakovë, është dëshmia më autentike dhe më rreqethëse e krimit të Serbisë mbi popullatën civile shqiptare. Natën tragjike në bodrum ndodheshin gjithsejt 21 persona, të cilët u zunë robë nga policia dhe njësitet speciale shtetërore të Serbisë. Aty ishin një i moshuar me aftësi të kufizuara mendore, 7 gra të moshave prej 30-73- vjeçare dhe 13 fëmijë prej moshës 2 deri në 15-vjeçare. Në të gjithë këtë masë fëmijësh e grash, pjesëtarët e policisë dhe njësive speciale të Serbisë shkrepën breshëri automatikësh dhe pasi i ekzekutuan nga afërsia ia vunë flakën shtëpisë. Nëpër tym e flakë Dren Ali Caka (9 vjeçar, i plagosur me dy plumba në kraharor) ka arritur të dalë nga dritarja dhe të shpëtojë, derisa motra e tij Diona (2 vjeçare), u dogj e gjallë.</p>
-        </div>
+      <div class="text">
+        <p><span>RAJONI:</span> GJAKOVË</p>
+        <p><span>KOMUNA:</span> GJAKOVË</p>
+        <p><span>VENDNDODHJA:</span>SHTËPIA E MEHDI VEJSËS</p>
+        <p><span>DATA:</span>1-2 PRILL 1999</p>
+        <p>
+          Masakra e tmerrshme që ndodhi në hapësirat e shtëpisë së Mehdi Vejsës
+          (ku ishin anëtarët e katër familjeve), natën ndërmjet 1 e 2 prillit
+          1999, në Gjakovë, është dëshmia më autentike dhe më rreqethëse e
+          krimit të Serbisë mbi popullatën civile shqiptare. Natën tragjike në
+          bodrum ndodheshin gjithsejt 21 persona, të cilët u zunë robë nga
+          policia dhe njësitet speciale shtetërore të Serbisë. Aty ishin një i
+          moshuar me aftësi të kufizuara mendore, 7 gra të moshave prej 30-73-
+          vjeçare dhe 13 fëmijë prej moshës 2 deri në 15-vjeçare. Në të gjithë
+          këtë masë fëmijësh e grash, pjesëtarët e policisë dhe njësive speciale
+          të Serbisë shkrepën breshëri automatikësh dhe pasi i ekzekutuan nga
+          afërsia ia vunë flakën shtëpisë. Nëpër tym e flakë Dren Ali Caka (9
+          vjeçar, i plagosur me dy plumba në kraharor) ka arritur të dalë nga
+          dritarja dhe të shpëtojë, derisa motra e tij Diona (2 vjeçare), u dogj
+          e gjallë.
+        </p>
+      </div>
     </div>
     <div class="photo-container">
-        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/11_edit.jpg" >
-     
+      <img
+        src="https://management.sites-stories.com/wp-content/uploads/2021/04/11_edit.jpg"
+      />
     </div>
-</body>
+  </body>
 </html>

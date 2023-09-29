@@ -1,3 +1,5 @@
+/* elsa */
+
 /* @font-face {
   src: url("Migra-Extralight.otf");
   font-family: "Migra";
@@ -124,6 +126,14 @@
 .case-description {
   text-align: center;
 }
+.case-description a {
+  text-decoration: none;
+  color: white;
+}
+.case-description a:hover {
+  font-size: 30px;
+  color: red;
+}
 .case-description p {
   font-family: "Lora", serif;
 }
@@ -146,7 +156,7 @@
     flex-direction: column;
   }
   .container {
-    padding: 60px 40px;
+    padding: 40px 25px;
   }
   .main p {
     width: 100%;

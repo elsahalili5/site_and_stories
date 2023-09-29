@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text and Photo with Animation</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site-Stories</title>
+
     <style>
-    body {
-            background: #282828;
-            font-family: "Antonio", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+        background: #282828;
+        font-family: "Antonio", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-        .text-container {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
+      .text-container {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
 
-        .text {
-            font-size: 18px;
-            color: #fff;
-        }
+      .text {
+        font-size: 18px;
+        color: #fff;
+      }
 
+      .text p {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
 
-        .text p {
-            font-size: 16px;
-            color: #fff;
-            font-family: "Courier New", Courier, monospace;
+      .text span {
+        font-size: 20px;
+        color: red; /* Red */
+        font-weight: bold;
+        font-family: "Georgia", sans-serif;
+      }
 
+      .photo-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
 
-        }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
 
-        .text span {
-            font-size: 20px;
-            color: red; /* Red */
-            font-weight: bold;
-            font-family: "Georgia", sans-serif;
-
-        }
-
-        .photo-container {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-
-        .photo:hover {
-            transform: scale(1.1);
-        }
-          /* Styles for the back arrow */
-          .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
+      .photo:hover {
+        transform: scale(1.1);
+      }
+      /* Styles for the back arrow */
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a class="back-arrow" href="">&#8592;</a>
     <div class="text-container">
-        <div class="text">
-            <p><span>RAJONI:</span> FERIZAJ</p>
-            <p><span>KOMUNA:</span> SHTIME</p>
-            <p><span>VENDNDODHJA:</span> REÇAK</p>
-            <p><span>DATA:</span>15 JANAR 1999</p>
-            <p>Serbia ka vrarë dhe gjymtuar për se gjalli 43 civilë shqiptarë në Reçak të komunës së Shtimes me datë 15 janar të vitit 1999, tre muaj pasi që Serbia ishte zotuar para bashkësisë ndërkombetare (marrëveshja e tetorit 1998 Hollbruk-Millosheviq) që nuk do të ndërmerrte asnjë aksion kundër popullates shqiptare në Kosovë. I tillë ky aksion i Serbisë ishte cilësuar edhe nga e BE-së dhe SHBA në një deklaratë të përbashkët. Policia e Serbisë e ndihmuar edhe nga një njesi e motorizuar ushtarake rrethojnë fshatin naten, në mengjesin e 15 janarit fillojnë granatimet nga katër pozicione të ndryshme (prej vendeve të quajtura “Pishat“, “Gështenjat“, “Rrasa e Çallakut“ dhe nga pozicioni i quajtur “Çesta“) Rreth mesditës forcat policore të Serbisë depertojnë me kembësori në fshat duke hyrë në secilen shtëpi.
-
-                Të mbërthyer nga frika një pjesë e banorëve të fshatit stehohen në podrumin dhe fermen e njërit nga fshataret i quajtur Sadik Osman. Reth 40 policë të Serbisë arrijnë të hyjnë në fermen e Osmanit dhe nxjerrin jashtë rreth 30 burra dhe djem të fshatit, fillimisht u kërkojnë dhe konfiskojnë gjithë dokumentacionin, pastaj i rrahin brutalisht me shkopinjë druri dhe metali, duke i urdhëruar që të ecin në drejtim të kodres (vendi i quajtur gropa e bebushit) aty fillojnë të shtijnë me automatik mbi ta, 24 nga 30 burra vriten në këtë vend, të mbuluar nga trupat e vrarë arrijnë të shpetojnë Ramë Shabani, Bilall Bilalli, Nesret Shabani, Ali Qazimi dhe Imer Imeri, banorë të fshatit Reçak.
-                
-                Në pjesët tjera të fshatit Reçak, forcat e Serbisë në të njejtën ditë ka vrarë edhe 14 persona të tjerë, disa prej të cileve i kanë goditur me sopat në kokë, tre prej të cilëve të mitur.
-                
-                Përfaqësuesi i atëhershëm i misionit civil ndërkombëtar në Kosovë William Vollker me të vizituar vendin e ngjarjes pas tërheqjes se forcave të Serbise ka deklaruar dhe e ka cilësuar këtë akt si krim kundër njerëzimit.</p>
-        </div>
+      <div class="text">
+        <p><span>RAJONI:</span> FERIZAJ</p>
+        <p><span>KOMUNA:</span> SHTIME</p>
+        <p><span>VENDNDODHJA:</span> REÇAK</p>
+        <p><span>DATA:</span>15 JANAR 1999</p>
+        <p>
+          Serbia ka vrarë dhe gjymtuar për se gjalli 43 civilë shqiptarë në
+          Reçak të komunës së Shtimes me datë 15 janar të vitit 1999, tre muaj
+          pasi që Serbia ishte zotuar para bashkësisë ndërkombetare (marrëveshja
+          e tetorit 1998 Hollbruk-Millosheviq) që nuk do të ndërmerrte asnjë
+          aksion kundër popullates shqiptare në Kosovë. I tillë ky aksion i
+          Serbisë ishte cilësuar edhe nga e BE-së dhe SHBA në një deklaratë të
+          përbashkët. Policia e Serbisë e ndihmuar edhe nga një njesi e
+          motorizuar ushtarake rrethojnë fshatin naten, në mengjesin e 15
+          janarit fillojnë granatimet nga katër pozicione të ndryshme (prej
+          vendeve të quajtura “Pishat“, “Gështenjat“, “Rrasa e Çallakut“ dhe nga
+          pozicioni i quajtur “Çesta“) Rreth mesditës forcat policore të Serbisë
+          depertojnë me kembësori në fshat duke hyrë në secilen shtëpi. Të
+          mbërthyer nga frika një pjesë e banorëve të fshatit stehohen në
+          podrumin dhe fermen e njërit nga fshataret i quajtur Sadik Osman. Reth
+          40 policë të Serbisë arrijnë të hyjnë në fermen e Osmanit dhe nxjerrin
+          jashtë rreth 30 burra dhe djem të fshatit, fillimisht u kërkojnë dhe
+          konfiskojnë gjithë dokumentacionin, pastaj i rrahin brutalisht me
+          shkopinjë druri dhe metali, duke i urdhëruar që të ecin në drejtim të
+          kodres (vendi i quajtur gropa e bebushit) aty fillojnë të shtijnë me
+          automatik mbi ta, 24 nga 30 burra vriten në këtë vend, të mbuluar nga
+          trupat e vrarë arrijnë të shpetojnë Ramë Shabani, Bilall Bilalli,
+          Nesret Shabani, Ali Qazimi dhe Imer Imeri, banorë të fshatit Reçak. Në
+          pjesët tjera të fshatit Reçak, forcat e Serbisë në të njejtën ditë ka
+          vrarë edhe 14 persona të tjerë, disa prej të cileve i kanë goditur me
+          sopat në kokë, tre prej të cilëve të mitur. Përfaqësuesi i atëhershëm
+          i misionit civil ndërkombëtar në Kosovë William Vollker me të vizituar
+          vendin e ngjarjes pas tërheqjes se forcave të Serbise ka deklaruar dhe
+          e ka cilësuar këtë akt si krim kundër njerëzimit.
+        </p>
+      </div>
     </div>
     <div class="photo-container">
-        <img src="https://management.sites-stories.com/wp-content/uploads/2021/06/2_edit.jpg" alt="FERIZAJ-Reçak">
-
-     
+      <img
+        src="https://management.sites-stories.com/wp-content/uploads/2021/06/2_edit.jpg"
+        alt="FERIZAJ-Reçak"
+      />
     </div>
-</body>
+  </body>
 </html>
