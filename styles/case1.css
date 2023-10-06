@@ -92,3 +92,18 @@
     margin-bottom: 10px;
   } */
 }
+
+.video-container {
+  position: relative;
+}
+.play-icon {
+  font-size: 4em;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+  color: red;
+}
