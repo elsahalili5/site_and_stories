@@ -99,16 +99,6 @@
 .caption span {
   color: red;
 }
-. @keyframes fade {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  20%,
-  80% {
-    opacity: 1;
-  }
-}
 
 .cases-wrapper {
   display: flex;
@@ -131,7 +121,6 @@
   color: white;
 }
 .case-description a:hover {
-  font-size: 30px;
   color: red;
 }
 .case-description p {
