@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text and Photo with Animation</title>
     <style>
-    body {
-            background: #282828;
-            font-family: "Antonio", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+        background: #282828;
+        font-family: "Antonio", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-        .text-container {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
+      .text-container {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
 
-        .text {
-            font-size: 18px;
-            color: #fff;
-        }
+      .text {
+        font-size: 18px;
+        color: #fff;
+      }
 
+      .text p {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
 
-        .text p {
-            font-size: 16px;
-            color: #fff;
-            font-family: "Courier New", Courier, monospace;
+      .text span {
+        font-size: 20px;
+        color: red; /* Red */
+        font-weight: bold;
+        font-family: "Georgia", sans-serif;
+      }
 
+      .photo-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
 
-        }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
 
-        .text span {
-            font-size: 20px;
-            color: red; /* Red */
-            font-weight: bold;
-            font-family: "Georgia", sans-serif;
-
-        }
-
-        .photo-container {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-
-        .photo:hover {
-            transform: scale(1.1);
-        }
-          /* Styles for the back arrow */
-          .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
+      .photo:hover {
+        transform: scale(1.1);
+      }
+      /* Styles for the back arrow */
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a class="back-arrow" href="CITY.HTML">&#8592;</a>
     <div class="text-container">
-        <div class="text">
-            <p><span>REGION:</span>MITROVICË </p>
-            <p><span>MUNICIPALITY:</span>SKËNDERAJ </p>
-            <p><span>SITE:</span> RREZALLË</p>
-            <p><span>DATE:</span>5 APRIL 1999</p>
-            <p>On April 5, 1999, Serbian Police surrounded the village of Rezallë in Skënderaj, executing about 100 Albanian civilians. Initially, Serbian Police entered every Albanian house, looting valuables (money and gold) and then gathered all the inhabitants in the center of the village, proceeding to separate the men and the women, and ordering the men to go in two directions, only to have them all executed within a few minutes.
-
-                Aiming to cover up the crime, Serbia returned to the crime scene a few weeks later and exhumed the bodies.  28 people killed in Rrezallë/Rezala (out of a total of 45 people killed) were found in a hidden mass grave in Rudnica, Municipality of Raska, in Serbia.</p>
-        </div>
+      <div class="text">
+        <p><span>REGION:</span>MITROVICË</p>
+        <p><span>MUNICIPALITY:</span>SKËNDERAJ</p>
+        <p><span>SITE:</span> RREZALLË</p>
+        <p><span>DATE:</span>5 APRIL 1999</p>
+        <p>
+          On April 5, 1999, Serbian Police surrounded the village of Rezallë in
+          Skënderaj, executing about 100 Albanian civilians. Initially, Serbian
+          Police entered every Albanian house, looting valuables (money and
+          gold) and then gathered all the inhabitants in the center of the
+          village, proceeding to separate the men and the women, and ordering
+          the men to go in two directions, only to have them all executed within
+          a few minutes. Aiming to cover up the crime, Serbia returned to the
+          crime scene a few weeks later and exhumed the bodies. 28 people killed
+          in Rrezallë/Rezala (out of a total of 45 people killed) were found in
+          a hidden mass grave in Rudnica, Municipality of Raska, in Serbia.
+        </p>
+      </div>
     </div>
     <div class="photo-container">
-        <img src="https://management.sites-stories.com/wp-content/uploads/2021/07/20_edit.jpg" >
-     
+      <img
+        src="https://management.sites-stories.com/wp-content/uploads/2021/07/20_edit.jpg"
+      />
     </div>
-</body>
+  </body>
 </html>

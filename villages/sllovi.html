@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text and Photo with Animation</title>
     <style>
-    body {
-            background: #282828;
-            font-family: "Antonio", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+        background: #282828;
+        font-family: "Antonio", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-        .text-container {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
+      .text-container {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
 
-        .text {
-            font-size: 18px;
-            color: #fff;
-        }
+      .text {
+        font-size: 18px;
+        color: #fff;
+      }
 
+      .text p {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
 
-        .text p {
-            font-size: 16px;
-            color: #fff;
-            font-family: "Courier New", Courier, monospace;
+      .text span {
+        font-size: 20px;
+        color: red; /* Red */
+        font-weight: bold;
+        font-family: "Georgia", sans-serif;
+      }
 
+      .photo-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
 
-        }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
 
-        .text span {
-            font-size: 20px;
-            color: red; /* Red */
-            font-weight: bold;
-            font-family: "Georgia", sans-serif;
-
-        }
-
-        .photo-container {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-
-        .photo:hover {
-            transform: scale(1.1);
-        }
-          /* Styles for the back arrow */
-          .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
+      .photo:hover {
+        transform: scale(1.1);
+      }
+      /* Styles for the back arrow */
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a class="back-arrow" href="CITY.HTML">&#8592;</a>
     <div class="text-container">
-        <div class="text">
-            <p><span>REGION:</span>PRISHTINË </p>
-            <p><span>MUNICIPALITY:</span>LIPJAN </p>
-            <p><span>SITE:</span>SLLOVI </p>
-            <p><span>DATE:</span>15-16 APRIL 1999</p>
-            <p>In Lipjan/Lipljan, similar to the situation in hundreds of other villages and settlements throughout Kosovo, police forces and units engaged by Serbia tortured and executed dozens of Albanian civilians without any pretext. On April 15 and 16, 1999, Serbian Police surrounded the village of Sllovi/Slovinje in Lipjan/Lipljan and executed at close range about 40 Albanian civilians of various ages, including a minor.
-
-            </p>
-        </div>
+      <div class="text">
+        <p><span>REGION:</span>PRISHTINË</p>
+        <p><span>MUNICIPALITY:</span>LIPJAN</p>
+        <p><span>SITE:</span>SLLOVI</p>
+        <p><span>DATE:</span>15-16 APRIL 1999</p>
+        <p>
+          In Lipjan/Lipljan, similar to the situation in hundreds of other
+          villages and settlements throughout Kosovo, police forces and units
+          engaged by Serbia tortured and executed dozens of Albanian civilians
+          without any pretext. On April 15 and 16, 1999, Serbian Police
+          surrounded the village of Sllovi/Slovinje in Lipjan/Lipljan and
+          executed at close range about 40 Albanian civilians of various ages,
+          including a minor.
+        </p>
+      </div>
     </div>
     <div class="photo-container">
-        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/15_edit.jpg" >
-     
+      <img
+        src="https://management.sites-stories.com/wp-content/uploads/2021/04/15_edit.jpg"
+      />
     </div>
-</body>
+  </body>
 </html>

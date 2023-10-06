@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text and Photo with Animation</title>
     <style>
-    body {
-            background: #282828;
-            font-family: "Antonio", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+        background: #282828;
+        font-family: "Antonio", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-        .text-container {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
+      .text-container {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
 
-        .text {
-            font-size: 18px;
-            color: #fff;
-        }
+      .text {
+        font-size: 18px;
+        color: #fff;
+      }
 
+      .text p {
+        font-size: 16px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
 
-        .text p {
-            font-size: 16px;
-            color: #fff;
-            font-family: "Courier New", Courier, monospace;
+      .text span {
+        font-size: 20px;
+        color: red; /* Red */
+        font-weight: bold;
+        font-family: "Georgia", sans-serif;
+      }
 
+      .photo-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
 
-        }
+      .photo {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
 
-        .text span {
-            font-size: 20px;
-            color: red; /* Red */
-            font-weight: bold;
-            font-family: "Georgia", sans-serif;
-
-        }
-
-        .photo-container {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s;
-        }
-
-        .photo:hover {
-            transform: scale(1.1);
-        }
-          /* Styles for the back arrow */
-          .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
+      .photo:hover {
+        transform: scale(1.1);
+      }
+      /* Styles for the back arrow */
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a class="back-arrow" href="CITY.HTML">&#8592;</a>
     <div class="text-container">
-        <div class="text">
-            <p><span>REGION:</span>PRIZREN </p>
-            <p><span>MUNICIPALITY:</span>SUHAREKË </p>
-            <p><span>SITE:</span>SUHAREKË </p>
-            <p><span>DATE:</span> 26 MARCH 1999</p>
-            <p>On March 26, 1999, Serbian Police forces attacked the Berisha family in Suharekë/Suva Reka without any pretext. Upon approaching the house, they opened fire with automatic weapons and several members of the Berisha family were wounded. Serbian Police entered the house and dragged the injured, while other members of the Berisha family were ordered to enter a nearby facility (pizzeria). Once the Police made sure that all members of the Berisha family had entered the facility as ordered, they started throwing grenades inside the facility. 49 members of the Berisha family were killed, including 23 children and a pregnant woman. 
-
-                After this act, Serbian Police load the victims onto a truck, several people who showed signs of life were shot in the head with an automatic weapon. The truck leaves in the direction of Prizren. Gramos Berisha, only 8 years old at the time, and his mother Vjollca and sister-in-law Shyhrete, pretended to be dead and while the victims were transported from Suharekë/Suva Reka to Prizren, they managed to jump from the truck and thus escaped.
-                
-                23 members of the Berisha family have been found in a truck on Lake Batajnica in Belgrade, while several members of the Berisha family are still missing.
-                
-                An excerpt from Gramoz’s account of events: “There were some very young children, nine months old, who screamed the whole time, they cried, asked for water, but the Serbian Police did not stop shooting, until all the voices stopped and there were no more screams, in the that facility”, recounted Gramoz. Surrounded by dead bodies, Gramoz saw that his mother, Vjollca, and the wife of a family member, Shyhrete, were still alive.
-                
-                “On the way I heard a conversation, Mom with Shyhrete talking, communicating with each other, but I still did not dare raise my head thinking that we have someone in the truck, and we would be found out. I stood still like that, without moving at all. Along the way, my Mom recognized the jacket I was wearing, and she was saying I want to at least look at my son’s face one last time. When she turned me towards herself, I opened my eyes. She said: “Mozi, are you alive?” I said yes. She said, “Come with Mom, we are going to jump off the truck because these people will throw us a pit and we won’t be able to get out then”, recounts Gramoz.
-                
-                “Near me, there was this boy same age as me, Mirat, he was also alive in the truck. Mom and I tried to take him with us, we told him: “Come with us, let’s jump.” He started to scream and said: “No, I do not want to, just get this body away from me.” They had put a body on top of him, he could not breathe. “Just get it away, I don’t want to come. “I want to go with my Mom”, recounts Gramoz.</p>
-        </div>
+      <div class="text">
+        <p><span>REGION:</span>PRIZREN</p>
+        <p><span>MUNICIPALITY:</span>SUHAREKË</p>
+        <p><span>SITE:</span>SUHAREKË</p>
+        <p><span>DATE:</span> 26 MARCH 1999</p>
+        <p>
+          On March 26, 1999, Serbian Police forces attacked the Berisha family
+          in Suharekë/Suva Reka without any pretext. Upon approaching the house,
+          they opened fire with automatic weapons and several members of the
+          Berisha family were wounded. Serbian Police entered the house and
+          dragged the injured, while other members of the Berisha family were
+          ordered to enter a nearby facility (pizzeria). Once the Police made
+          sure that all members of the Berisha family had entered the facility
+          as ordered, they started throwing grenades inside the facility. 49
+          members of the Berisha family were killed, including 23 children and a
+          pregnant woman. After this act, Serbian Police load the victims onto a
+          truck, several people who showed signs of life were shot in the head
+          with an automatic weapon. The truck leaves in the direction of
+          Prizren. Gramos Berisha, only 8 years old at the time, and his mother
+          Vjollca and sister-in-law Shyhrete, pretended to be dead and while the
+          victims were transported from Suharekë/Suva Reka to Prizren, they
+          managed to jump from the truck and thus escaped. 23 members of the
+          Berisha family have been found in a truck on Lake Batajnica in
+          Belgrade, while several members of the Berisha family are still
+          missing. An excerpt from Gramoz’s account of events: “There were some
+          very young children, nine months old, who screamed the whole time,
+          they cried, asked for water, but the Serbian Police did not stop
+          shooting, until all the voices stopped and there were no more screams,
+          in the that facility”, recounted Gramoz. Surrounded by dead bodies,
+          Gramoz saw that his mother, Vjollca, and the wife of a family member,
+          Shyhrete, were still alive. “On the way I heard a conversation, Mom
+          with Shyhrete talking, communicating with each other, but I still did
+          not dare raise my head thinking that we have someone in the truck, and
+          we would be found out. I stood still like that, without moving at all.
+          Along the way, my Mom recognized the jacket I was wearing, and she was
+          saying I want to at least look at my son’s face one last time. When
+          she turned me towards herself, I opened my eyes. She said: “Mozi, are
+          you alive?” I said yes. She said, “Come with Mom, we are going to jump
+          off the truck because these people will throw us a pit and we won’t be
+          able to get out then”, recounts Gramoz. “Near me, there was this boy
+          same age as me, Mirat, he was also alive in the truck. Mom and I tried
+          to take him with us, we told him: “Come with us, let’s jump.” He
+          started to scream and said: “No, I do not want to, just get this body
+          away from me.” They had put a body on top of him, he could not
+          breathe. “Just get it away, I don’t want to come. “I want to go with
+          my Mom”, recounts Gramoz.
+        </p>
+      </div>
     </div>
     <div class="photo-container">
-        <img src="https://management.sites-stories.com/wp-content/uploads/2021/05/6_edit_new.jpg" >
-     
+      <img
+        src="https://management.sites-stories.com/wp-content/uploads/2021/05/6_edit_new.jpg"
+      />
     </div>
-</body>
+  </body>
 </html>
