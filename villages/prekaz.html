@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span> MITROVICË</p>
+            <p><span>MUNICIPALITY:</span> SKËNDERAJ</p>
+            <p><span>SITE:</span> PREKAZ</p>
+            <p><span>DATE:</span>5-7 MARCH 1999</p>
+            <p>On March 4, 1998, Serbian Police equipped with artillery and armored vehicles, assisted by a Special Unit from Serbia deployed to the village of Prekaz/Prekaze in Skënderaj/Srbica, in the vicinity of the former Ammunition Factory. A day later, on the morning of March 5, they opened fire on the Jashari family. This family had been under attack by Serbian forces on two other occasions, on December 30, 1991 and on January 22, 1998. The head of the household, Shaban Jashari, together with his sons Adem and Hamzë Jashari, were among the first to start organizing groups for armed resistance in Kosovo against the Serbian repression and occupation of Kosovo.
+
+                Serbian Police and other security structures of this state did not intend to arrest Shaban, Adem, and Hamza Jashari, but rather to kill them together with their entire family. This is best evidenced by the fact that in all of the Serbian attacks against this family, there was never any call to surrender, instead they targeted and engaged the Jashari compound without warning, aware that there were children, women, and elderly people inside.
+                
+                The attack on the Jashari family started on March 5 and continued unabated until the afternoon of March 7. In this attack, 59 people were killed, 55 from the Jashari family, among them 15 children and 17 women and girls. The only survivor of this attack on the Jashari family was Besarta (Hamzë) Jashari, who was 6 years old at the time. </p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/06/1_edit.jpgS" >
+     
+    </div>
+</body>
+</html>

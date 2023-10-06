@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span>PRIZREN </p>
+            <p><span>MUNICIPALITY:</span>MALISHEVË </p>
+            <p><span>SITEDATE:</span> BURIM</p>
+            <p><span>DATA:</span>31 March 1999</p>
+            <p>On March 31, 1999, police forces and units engaged by Serbia notice the residents of the Burim/Jović village of Malishevë/Malisevo gathering in the place known as “Vrella e Mëhillit” (Michael’s Vrella) and open fire from a distance in the direction of that location; facing this situation, hundreds of residents agree to surrender. Serbian Police first collect all the identification documentation and take their valuables (money, gold, and wrist watches). After that, they separate the men and the women, the women are ordered to leave in the direction of the village of Carravranë/Crnovrana (AKA Gurbardh), while the men are subjected to various forms of torture and then 42 people are executed, with only one person managing to survive by being covered with dead bodies falling on him, while one person could not be identified due to the mutilation of his body by Serbian Police forces.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/18_edit.jpg" >
+     
+    </div>
+</body>
+</html>

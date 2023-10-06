@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span>PRISHTINË </p>
+            <p><span>MUNICIPALITY:</span> DRENAS DHE SKËNDERAJ</p>
+            <p><span>SITE:</span> QIREZ AND LIKOSHAN</p>
+            <p><span>DATE:</span>28 FEBRUARY 1999</p>
+            <p>On February 27, 1998, Serbian Police surrounded several villages in Drenas/Glogovac, including Likoshan/Likosane and Qirez/Cirez. While withdrawing from these villages, on the morning of February 28, 1998, Serbian police executed 24 persons/Albanians, including a child (16 years old) and a pregnant woman. The pregnant woman was Rukije Nebihu, 27 years old, in the seventh month of pregnancy, mother of two children. She was killed by the Serbian Police by gunshot fired at close range to the head. According to surviving witnesses, Rukija was shot while holding her 3-year-old daughter in her lap. After this act, Serbian Police killed Rukija’s husband (Ilir) and his brother (Xhemshir).
+
+                Some of the victims in Qirez/Cirez and Likoshan/Likosane were initially thrown into the wells of the village and then killed.
+                
+                Some of the victims in Qirez/Cirez and Likoshan/Likosane are believed to have been killed in the presence of the Investigating Judge of the District Court in Prishtinë/Pristina, Danica Marinkovic. This is supported by research conducted by the Belgrade-based Humanitarian Law Center headed by Natasa Kandic.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/4_edit.jpg" >
+     
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span>GJILAN </p>
+            <p><span>MUNICIPALITY:</span>GJILAN </p>
+            <p><span>SITE:</span>LLASHTICË </p>
+            <p><span>DATE:</span>13 APRIL 1999</p>
+            <p>During the months of April, May, and June 1999, Serbian Police and armed formations engaged by Serbia, several times in a row, entered the village of Llashticë/Vlastica in Gjilan/Gnjilane, setting fire to houses and livestock, and executing defenseless Albanian civilians. In these events, even newborn children were not spared from execution in this village.
+
+                The first entry by Serbian armed formations took place on April 13, 1999, where a number of village houses were set on fire and ten people were executed, among them an 11-year-old child.
+                
+                Ten days later, namely on April 21, forces engaged by Serbia killed 4 Albanian civilians, including a 10-year-old girl.
+                
+                14 days later (April 30), the same forces re-enter the village of Llashticë/Vlastica, setting many houses and other facilities on fire and executing 13 people at Rifat Shabani’s house. On the same day, these forces loot dozens of agricultural machinery, livestock, and other valuables from the houses and farms in the village. The newly born Lirim Shabani was also killed on this day.
+                
+                In addition to those killed, six people were seriously injured. Among them is Deli Hyseni, who suffered a throat wound and witnessed up close the killing and burning of most of his family. He lost his sight in 2007 as a result of injury and trauma.
+                
+                123 houses, the village school, the mosque, 630 heads of livestock, and dozens of vehicles and agricultural equipment were burned in the village of Llashticë/Vlastica, from early April until June 13, 1999.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/04/25_edit.jpg" >
+     
+    </div>
+</body>
+</html>

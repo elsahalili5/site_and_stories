@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span>PRISHTINË </p>
+            <p><span>MUNICIPALITY:</span>PODUJEVË </p>
+            <p><span>SITEDATE:</span> PODUJEVË</p>
+            <p><span>DATA:</span>28 MARCH 1999</p>
+            <p>On March 28, 1999, Serbian Special Forces known as “Scorpions” surrounded one of the neighborhoods in the center of Podujevë/Podujevo town, and positioned near the Bogujevci family house and began demolishing their doors and windows. In this situation, members of the Bogujevci, Duriqi and Llugaliu families leave the house in fear. At first, the Serbian forces instructed them to move through the neighbors’ yards and come out to the streets. After having approached the street close to the police station, an elderly man, Hamdi Duriqi, was shot. After a few minutes, members of Bogujevci, Duriqi and Llugaliu families are ordered to return back through the same road. Upon entering their neighbor’s yard, in the presence of the children, mother Shefkate Bogujevci is shot dead. After a few minutes, Serbian forces opened fire from many directions, leaving 13 women and children dead on the spot. 5 children of the Bogujevci family escape from the execution, although seriously injured; Fatos, Jehona, Saranda, Lirie and Genc.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/05/Repeat-Grid-1.png" >
+     
+    </div>
+</body>
+</html>

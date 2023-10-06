@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Photo with Animation</title>
+    <style>
+    body {
+            background: #282828;
+            font-family: "Antonio", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+
+        .text p {
+            font-size: 16px;
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+
+
+        }
+
+        .text span {
+            font-size: 20px;
+            color: red; /* Red */
+            font-weight: bold;
+            font-family: "Georgia", sans-serif;
+
+        }
+
+        .photo-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+          /* Styles for the back arrow */
+          .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-arrow" href="CITY.HTML">&#8592;</a>
+    <div class="text-container">
+        <div class="text">
+            <p><span>REGION:</span>MITROVICË</p>
+            <p><span>MUNICIPALITY:</span> SKËNDERAJ </p>
+            <p><span>SITE:</span>IZBICË </p>
+            <p><span>DATE:</span> 28 MARCH 1999</p>
+            <p>On March 27, 1999, police and paramilitary units engaged by Serbia, surrounded the village of Izbicë/Izbica in Skënderaj/Srbica and started throwing grenades in the direction of the village. It is believed that on that day there were about 5 thousand people present, not only residents of this village, but also residents of the surrounding villages who had fled from other villages to take refuge in Izbicë/Izbica. This was reflected in a comprehensive report submitted by Amnesty International.
+
+                The villagers, frightened by the shelling moved in the vicinity of the forest, believing that Serbian forces would not penetrate to that location. The following day, on March 28, 1999, they surrounded the place where the civilian population was staying and initially separated the women from the men, ordered the women to leave for Albania, while directing the men towards two separate locations. One group was taken to a nearby hill, while the other group was taken to a streambed near the village. Serbian forces open fire with automatic weapons at both groups of men, killing at least 126 of them.
+                
+                Two elderly women, unable to walk, were sitting in the trailer of a tractor, while Serbian forces set fire to the trailer and both old women were burned alive. On March 28, children, old men, old women, persons with mental disabilities, and disabled persons were not spared in the village of Izbicë/Izbica.
+                
+                The Izbicë/Izbica massacre is also mentioned at a US DoD Pentagon Briefing, publishing satellite images which clearly showed the location of dozens of burial plots in Izbicë/Izbica. Following this publication, forces engaged by Serbia exhume the victims and disperse them to various locations in both Kosovo and Serbia, in an attempt to hide the crimes committed against the Albanian civilian population. The exact number of people killed in Izbicë/Izbica has never been determined, because of the large number of residents of other villages who had been present in Izbicë/Izbica and because Serbia exhumed the victims and lost their bodies, however at least 126 people have been identified as killed or maimed.</p>
+        </div>
+    </div>
+    <div class="photo-container">
+        <img src="https://management.sites-stories.com/wp-content/uploads/2021/05/7_edit.jpg" >
+     
+    </div>
+</body>
+</html>
